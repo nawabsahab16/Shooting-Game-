@@ -38,5 +38,21 @@ class Player {
 
 }
   
-const sam = new Player(playerPosition.x, playerPosition.y, 15 , "red");
-sam.draw();
+ 
+
+function animation() {
+    requestAnimationFrame(animation);
+    const sam = new Player(
+    playerPosition.x + Math.random() * 100,
+     playerPosition.y.Math.random() * 100, 
+     15,
+     `rgb(${Math.random() * 250}, ${Math.random() * 250}, ${Math.random()* 250})`
+      
+     );
+    sam.draw();
+    
+}
+
+animation();
+
+
